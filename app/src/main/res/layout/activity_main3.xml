@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="#66D6EF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="Edit movie"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:id="@+id/liner1"
+            android:layout_width="288dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="36dp"
+            android:background="#AAA4A4">
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#F4F1F1"
+                android:hint="Movie Name"
+                android:inputType="textAutoComplete"
+                android:paddingLeft="17dp"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner2"
+            android:layout_width="288dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="36dp"
+            android:background="#AAA4A4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/liner1">
+
+            <EditText
+                android:id="@+id/Authors"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="#F4F1F1"
+                android:hint="Movie authors"
+                android:inputType="textAutoComplete"
+                android:paddingLeft="17dp"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner3"
+            android:layout_width="288dp"
+            android:layout_height="212dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="36dp"
+            android:background="#AAA4A4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/liner2">
+
+            <EditText
+                android:id="@+id/About"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="15dp"
+                android:background="#F4F1F1"
+                android:gravity="left|top"
+                android:hint="About Movie"
+                android:inputType="textAutoComplete"
+                android:paddingLeft="17dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/liner4"
+                android:layout_width="288dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="36dp"
+                android:background="#AAA4A4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:background="#F4F1F1"
+                    android:hint="Movie date"
+                    android:inputType="date"
+                    android:paddingLeft="17dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_save"
+                android:layout_width="105dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/backround_btn"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/liner4"
+                app:layout_constraintTop_toBottomOf="@+id/liner4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
